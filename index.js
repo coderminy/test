@@ -4,6 +4,8 @@ const path = require('path');
 
 http.createServer((req, res) => {
     if (req.url === '/resource') {
+        console.log('requested');
+        
         const filePath = path.join(__dirname, '/resource.js');
         fs.readFile(filePath, (err, data) => {
             res.writeHead(200, {
