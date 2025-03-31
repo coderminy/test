@@ -1,1 +1,1 @@
-console.log(`resource ${Date()}`);
+console.log('resource'+Date());
